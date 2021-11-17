@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4fC3F7"
+
+
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:elevation="5dp"
+            android:textColor="@color/md_grey_black"
+
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/bluerectangle"
+
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.fxn.BubbleTabBar
+        android:id="@+id/bubbleTabBar"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        app:bubbletab_menuResource="@menu/list"
+        >
+    </com.fxn.BubbleTabBar>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bubbleTabBar"
+        android:fillViewport="true"/>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        app:headerLayout="@layout/nav_header"
+        android:visibility="invisible"
+
+        app:menu="@menu/navdrawer_menu" />
+
+
+</RelativeLayout>
