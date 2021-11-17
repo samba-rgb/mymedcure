@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>previous medical history</title>
+
+	<!-- INCLUDING JQUERY-->
+	<script src=
+"https://code.jquery.com/jquery-3.5.1.js">
+	</script>
+
+	<!-- CSS FOR STYLING THE PAGE -->
+	<style>
+		table {
+			margin: 0 auto;
+			font-size: large;
+			border: 1px solid black;
+            vertical-align: auto;
+		}
+
+		h1 {
+			text-align: center;
+			color: #006600;
+			font-size: xx-large;
+			font-family: 'Gill Sans',
+				'Gill Sans MT', ' Calibri',
+				'Trebuchet MS', 'sans-serif';
+		}
+
+		td {
+			background-color: #E4F5D4;
+			border: 1px solid black;
+		}
+
+		th,
+		td {
+			font-weight: bold;
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+
+		td {
+			font-weight: lighter;
+		}
+        div{
+            width: 350px;
+            height: auto;
+
+            padding: 25px;
+            background-color: aliceblue;
+            align-self: center;
+            text-align: center;
+            
+    shape-rendering: crispEdges;
+    border-radius: 25px;
+    border-style:solid;
+  border-width: 1px;
+  box-shadow: 5px 5px 5px 5px #ECEFF1;
+            justify-content: center;
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+	</style>
+</head>
+
+<body>
+	<section id= "table">
+		<h1>Medical History</h1>
+
+		<!-- TABLE CONSTRUCTION-->
+		
+       
+            <script>
+                            $(document).ready(function () {
+            
+                                // FETCHING DATA FROM JSON FIL
+                                $.getJSON("user.json",
+                                        function (data) {
+                                    var student = '';
+            
+                                    // ITERATING THROUGH OBJECTS
+                                    $.each(data, function (key, value) {
+            
+                                        //CONSTRUCTION OF ROWS HAVING
+                                        // DATA FROM JSON OBJECT
+                                        
+                                        student += '<div>' + '<h3>' + 
+                                            "medical visit_name : " + value.medical_record_number + '</h3>';
+            
+                                        student += '<h3>' +
+                                            "Doc Name : " + value.DOC_NAME + '</h3>';
+            
+                                        student += '<h3>' +
+                                            "VISITED DATE : " + value.VISITED_DATE+ '</h3>';
+                                        student += '<h3>' +
+                                            "doctor observation : " + value.doctor_observation+ '</h3>';
+                                        
+                                        student += '<h3>' +
+                                            "Bp  : " + value.bp_value+ '</h3>';
+                                        student += '<h3>' +
+                                            "Cell Count  : " + value.cell_count+ '</h3>';  
+                                        student += '<h3>' +
+                                            "Hemoglobin  : " + value.HHEMOGLOBIN_PER+ '</h3>';
+                                               
+            
+            
+                                        student += '</div>' ;
+                                    });
+                                    
+                                    //INSERTING ROWS INTO TABLE
+                                    $('#table').append(student);
+                                });
+                            });
+                        </script>
+	</section>
+</body>
+
+</html>

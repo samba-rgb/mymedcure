@@ -1,0 +1,181 @@
+
+  body {
+    background-color:aliceblue;
+    align-items: center;
+   }
+  h1 {
+    color: red;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  /* form{
+      color: rebeccapurple;
+      text-align: left;
+      padding-left: 10px;
+      margin-top: 15px;
+      
+
+      
+  } */
+  .maintable{
+    padding: 10px;
+    background-color: white;
+    shape-rendering: crispEdges;
+    border-radius: 25px;
+    border-style:solid;
+  border-width: 1px;
+  box-shadow: 5px 5px 5px 5px #ECEFF1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+.name_box{
+  border-radius: 25px;
+    border-style: solid;
+  border-width: 5px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: left;
+  padding-left: 10px;
+  
+
+}
+.intro{
+  padding: 10px;
+}
+.para1{
+  padding-left: 10px;
+}
+.div2{
+  text-align: right;
+  padding: 10px;
+
+}
+.button{
+  border-radius: 25px;
+    border-style: solid;
+  border-width: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.heading{
+  font-weight: bold;
+  font-style: italic;
+  font-family: cursive;
+}
+.button {
+ height: 200px;
+ width: 200px;
+ align-items: center;
+ margin-top: auto;
+ margin-bottom: auto;
+
+}
+.main-button {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  height: 100%;
+  width: 100%;
+  display: flex;
+ }
+ .form1{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 150px;
+   margin-bottom: auto;
+
+ }
+ .form2{
+  
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  margin-top: 150px;
+  margin-bottom: auto;
+  
+}
+.form3{
+  
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  margin-top: 150px;
+  margin-bottom: auto;
+  
+}
+.form{
+ 
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  height: 200px;
+  margin-top: 150px;
+  margin-bottom: auto;
+  background-color: #ECEFF1;
+  text-align: end;
+  border-radius: 25px;
+    border-style: solid;
+  border-width: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  
+}
+
+
+.csv{
+  
+  justify-content: flex-end;
+  display: flex;
+  position:relative;
+margin-top:60px;
+padding-bottom: 20px;
+
+}
+
+.img-medical-report{
+
+  height: 70px;
+  width: 70px;
+
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonadd {
+  height: 200px;
+  width: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: url(add-med.png);
+  border-radius: 25px;
+    border-style: solid;
+  border-width: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  margin-left: 15px;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  padding-left: 16px;
+ 
+ 
+ }
+
+

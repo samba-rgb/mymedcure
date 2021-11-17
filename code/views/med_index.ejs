@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Doctor Observation</h1>
+    </div>
+    <form action="/api/add_medhis" method="POST">
+      <table class="maintable">
+            <!-- Row 1 -->
+            <td class="image">
+                <img src="css/medcure_icon.jpg" alt="Patient img" width="300">
+            </td>
+
+            <td class="blank_col">
+                <td bgcolor="#FFFFFF" colspan="10">&nbsp;</td>
+            </td>
+
+            <td>
+                <div class="div1">
+                    <p class="para1">
+                        <label for="medical_visit_name"><b>Medical vist name:</b></label>
+                        <input type="text" id="medical_visit_name" name="medical_visit_name" placeholder="medical vist name" size="50" class="name_box">
+                    </p>
+
+                    <p class="para1">
+                        <label for="Doctor_name"><b>Doctor Name:</b></label>
+                        <input type="text" id="Doctor_name" name="Doctor_name" placeholder="Doctor name" class="name_box" size="50">
+                    </p>
+
+                    <p class="para1">
+                        <label for="observation"><b>Observation:</b></label>
+                        <input type="text" d="observation" name="observation" placeholder="Write your observation here" size="90" class="name_box">
+                    </p>
+
+                    <p class="para1">
+                        <label for="bp"><b>BP:</b></label>
+                        <input type="text" id="bp" name="bp" placeholder="bp" class="name_box">
+                    </p>
+
+                    <p class="para1">
+                        <label for="hemoglobin"><b>Hemoglobin:</b></label>
+                        <input type="text" id="hemoglobin" name="hemoglobin" placeholder="hemoglobin" class="name_box">
+                    </p>
+                    <p class="para1">
+                        <label for="cell_count"><b>Cell Count:</b></label>
+                        <input type="text" id="cell_count" name="cell_count" placeholder="cell count" class="name_box">
+                    </p>
+                    <label for="is_virtual" class="para1"><b>Is Virtual</b> </label>
+                    <input type="checkbox" id="is_virtual" name="is_virtual" class="name_box">
+                </div>
+                <div class="div2">
+                    <button type="submit" class="button2">Submit</button>
+          
+                  </div>
+            </td>
+        </table>
+        
+    </form>
+
+</body>
+
+</html>

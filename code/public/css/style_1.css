@@ -1,0 +1,95 @@
+
+  
+  h1 {
+    color: red;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  form{
+      color: rebeccapurple;
+      text-align: center;
+
+      
+  }
+  .name-box{
+    border-radius: 25px;
+      border-style: solid;
+    border-width: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .table1{
+
+    margin-left: auto;
+    margin-right: auto;
+  padding-left: 10px;
+
+    
+  }
+  .intro{
+    padding: 10px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:230px;
+  max-height:200px;
+    width: 40%;
+    
+    height: 40%;
+  }
+  .day{
+    border-radius: 25px;
+    padding: 15px;
+     background-color: #E0F7FA;
+    opacity: 50;
+    border: 10px ;
+    margin: 2cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-top: 50px;
+  }
+  .day-table{
+    width: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-spacing: 20px;
+    border-collapse: separate;
+    
+  }
+  .submit1{
+    border-radius: 25px;
+    padding: 10px;
+    border: 10px ;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #B3E5FC;
+    text-emphasis-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submit2{
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 10px ;
+    color: rebeccapurple;
+
+    background-color:  #B3E5FC;
+    text-emphasis-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style_1.css">
+</head>
+
+<body>
+
+    <div>
+        <img src="css/medcure_icon.jpg" alt="Medicine1">
+    </div>
+    <br>
+
+    <form action="/api/add_medicine" method="POST">
+
+        <table class = "table1">
+            <thead>
+                <tr >
+                    <th>Medicine Name </th>
+                    <th>Link</th>
+                    <th>Information</th>
+                    <th>count</th>
+                    <th>expiry date</th>
+                </tr>
+                <tr >
+                    <td><input type="text" placeholder="Medicine" id="medecine" name="medincine_name" class="name-box"></td>
+                    <td><input type="url" placeholder="Link to the page" id="url" name="link_of_medicine" class="name-box"></td>
+                    <td><input type="text" placeholder="info about medicine" id="info" name="information" class="name-box"></td>
+                    <td><input type="text" placeholder="count" id="count" name="count" class="name-box"></td>
+                    <td>      <input type="datetime-local" id="Test_DatetimeLocal" name = "expiry" class="name-box"> </td>
+
+                </tr>
+            </thead>
+        </table>
+
+        <div>
+            <table class = "day-table">
+              <td class = "day">
+                     <div class="preference">
+                         <label for="monday">Monday</label>
+                         <input type="hidden" name="monday" value=0 />
+
+                         <input type="checkbox" name="monday" id="monday" value=1 >
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="monday_morning">Monday Morning</label>
+                         <input type="hidden" name="monday_morning" value=0 />
+
+                         <input type="checkbox" name="monday_morning" id="monday_morning" value=1>
+                     </div>
+                     <div class="monday_afternoon">
+                         <label for="monday_afternoon">Monday Afternoon</label>
+                         <input type="hidden" name="monday_afternoon" value=0 />
+
+                         <input type="checkbox" name="monday_afternoon" id="monday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="monday_evening">Monday Evening</label>
+                         <input type="hidden" name="monday_evening" value=0 />
+
+                         <input type="checkbox" name="monday_evening" id="monday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="monday_night">Monday Night</label>
+                         <input type="hidden" name="monday_night" value=0 />
+
+                         <input type="checkbox" name="monday_night" id="monday_night" value=1>
+                     </div>
+                 </td>
+                 <td class = "day">
+                     <div class="preference">
+                         <label for="tuesday">tuesday</label>
+                         <input type="hidden" name="tuesday" value=0 />
+
+                         <input type="checkbox" name="tuesday" id="tuesday" value=1>
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="tuesday_morning">tuesday Morning</label>
+                         <input type="hidden" name="tuesday_morning" value=0 />
+
+                         <input type="checkbox" name="tuesday_morning" id="tuesday_morning" value=1>
+                     </div>
+                     <div class="tuesday_afternoon">
+                         <label for="tuesday_afternoon">tuesday Afternoon</label>
+                         <input type="hidden" name="tuesday_afternoon" value=0 />
+
+                         <input type="checkbox" name="tuesday_afternoon" id="tuesday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="tuesday_evening">tuesday Evening</label>
+                         <input type="hidden" name="tuesday_evening" value=0 />
+
+                         <input type="checkbox" name="tuesday_evening" id="tuesday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="tuesday_night">tuesday Night</label>
+                         <input type="hidden" name="tuesday_night" value=0 />
+
+                         <input type="checkbox" name="tuesday_night" id="tuesday_night" value=1>
+                     </div>
+                 </td>
+                 <td class = "day">
+                     <div class="preference">
+                         <label for="wednessday">wednessday</label>
+                         <input type="hidden" name="wednessday" value=0 />
+
+                         <input type="checkbox" name="wednessday" id="wednessday" value=1>
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="wednessday_morning">wednessday Morning</label>
+                         <input type="hidden" name="wednessday_morning" value=0 />
+
+                         <input type="checkbox" name="wednessday_morning" id="wednessday_morning" value=1>
+                     </div>
+                     <div class="wednessday_afternoon">
+                         <label for="wednessday_afternoon">wednessday Afternoon</label>
+                         <input type="hidden" name="wednessday_afternoon" value=0 />
+
+                         <input type="checkbox" name="wednessday_afternoon" id="wednessday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="wednessday_evening">wednessday Evening</label>
+                         <input type="hidden" name="wednessday_evening" value=0 />
+
+                         <input type="checkbox" name="wednessday_evening" id="wednessday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="wednessday_night">wednessday Night</label>
+                         <input type="hidden" name="wednessday_night" value=0 />
+
+                         <input type="checkbox" name="wednessday_night" id="wednessday_night" value=1>
+                     </div>
+                 </td>
+                 <td class = "day">
+                     <div class="preference">
+                         <label for="thursday">thursday</label>
+                         <input type="hidden" name="thursday" value=0 />
+
+                         <input type="checkbox" name="thursday" id="thursday" value=1>
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="thursday_morning">thursday Morning</label>
+                         <input type="hidden" name="thursday_morning" value=0 />
+
+                         <input type="checkbox" name="thursday_morning" id="thursday_morning" value=1>
+                     </div>
+                     <div class="thursday_afternoon">
+                         <label for="thursday_afternoon">thursday Afternoon</label>
+                         <input type="hidden" name="thursday_afternoon" value=0 />
+
+                         <input type="checkbox" name="thursday_afternoon" id="thursday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="thursday_evening">thursday Evening</label>
+                         <input type="hidden" name="thursday_evening" value=0 />
+
+                         <input type="checkbox" name="thursday_evening" id="thursday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="thursday_night">thursday Night</label>
+                         <input type="hidden" name="thursday_night" value=0 />
+
+                         <input type="checkbox" name="thursday_night" id="thursday_night" value=1>
+                     </div>
+                 </td>
+                 <td class = "day">
+                     <div class="preference">
+                         <label for="friday">friday</label>
+                         <input type="hidden" name="friday" value=0 />
+
+                         <input type="checkbox" name="friday" id="friday" value=1>
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="friday_morning">friday Morning</label>
+                         <input type="hidden" name="friday_morning" value=0 />
+
+                         <input type="checkbox" name="friday_morning" id="friday_morning" value=1>
+                     </div>
+                     <div class="friday_afternoon">
+                         <label for="friday_afternoon">friday Afternoon</label>
+                         <input type="hidden" name="friday_afternoon" value=0 />
+
+                         <input type="checkbox" name="friday_afternoon" id="friday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="friday_evening">friday Evening</label>
+                         <input type="hidden" name="friday_evening" value=0 />
+
+                         <input type="checkbox" name="friday_evening" id="friday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="friday_night">friday Night</label>
+                         <input type="hidden" name="friday_night" value=0 />
+
+                         <input type="checkbox" name="friday_night" id="friday_night" value=1>
+                     </div>
+                 </td>
+                 <td class = "day">
+                     <div class="preference">
+                         <label for="saturday">saturday</label>
+                         <input type="hidden" name="saturday" value=0 />
+
+                         <input type="checkbox" name="saturday" id="saturday" value=1>
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="saturday_morning">saturday Morning</label>
+                         <input type="hidden" name="saturday_morning" value=0 />
+
+                         <input type="checkbox" name="saturday_morning" id="saturday_morning" value=1>
+                     </div>
+                     <div class="saturday_afternoon">
+                         <label for="saturday_afternoon">saturday Afternoon</label>
+                         <input type="hidden" name="saturday_afternoon" value=0 />
+
+                         <input type="checkbox" name="saturday_afternoon" id="saturday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="saturday_evening">saturday Evening</label>
+                         <input type="hidden" name="saturday_evening" value=0 />
+
+                         <input type="checkbox" name="saturday_evening" id="saturday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="saturday_night">saturday Night</label>
+                         <input type="hidden" name="saturday_night" value=0 />
+
+                         <input type="checkbox" name="saturday_night" id="saturday_night" value=1>
+                     </div>
+                 </td>
+                 <td class = "day">
+                     <div class="preference">
+                         <label for="sunday">sunday</label>
+                         <input type="hidden" name="sunday" value=0 />
+
+                         <input type="checkbox" name="sunday" id="sunday" value=1>
+                     </div>
+ 
+                     <div class="preference">
+                         <label for="sunday_morning">sunday Morning</label>
+                         <input type="hidden" name="sunday_morning" value=0 />
+
+                         <input type="checkbox" name="sunday_morning" id="sunday_morning" value=1>
+                     </div>
+                     <div class="sunday_afternoon">
+                         <label for="sunday_afternoon">sunday Afternoon</label>
+                         <input type="hidden" name="sunday_afternoon" value=0 />
+
+                         <input type="checkbox" name="sunday_afternoon" id="sunday_afternoon" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="sunday_evening">sunday Evening</label>
+                         <input type="hidden" name="sunday_evening" value=0 />
+
+                         <input type="checkbox" name="sunday_evening" id="sunday_evening" value=1>
+                     </div>
+                     <div class="preference">
+                         <label for="sunday_night">sunday Night</label>
+                         <input type="hidden" name="sunday_night" value=0 />
+
+                         <input type="checkbox" name="sunday_night" id="sunday_night" value=1>
+                     </div>
+                 </td>                    
+            </table>
+        </div>
+        <button type="submit" class="submit1">add another medicine</button>
+    </form>
+    <form action="/api/downloadhis" method="POST">
+
+        <button type="submit" class="submit2">Download CSV</button>
+    </form>
+
+</body>
+
+</html>
