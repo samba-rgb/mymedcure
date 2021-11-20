@@ -79,7 +79,7 @@ public class view_tab_graph extends AppCompatActivity {
                             .add("tablet", String.valueOf(sam))
                             .add("pattern",String.valueOf(sam2))
                             .build();
-                    Request request = new Request.Builder().url("http://192.168.149.90:5000/debug")
+                    Request request = new Request.Builder().url("http://192.168.145.90:5000/debug")
                             .post(formbody)
                             .build();
                     okHttpClient.newCall(request).enqueue(new Callback() {
@@ -184,7 +184,7 @@ public class view_tab_graph extends AppCompatActivity {
                     .add("tablet", String.valueOf(sam))
                     .add("pattern",String.valueOf(sam2))
                     .build();
-            Request request = new Request.Builder().url("http://192.168.243.90:5000/debug")
+            Request request = new Request.Builder().url("http://192.168.145.90:5000/debug")
                     .post(formbody)
                     .build();
             okHttpClient.newCall(request).enqueue(new Callback() {
@@ -245,7 +245,7 @@ public class view_tab_graph extends AppCompatActivity {
                     .add("tablet", String.valueOf(sam))
                     .add("pattern",String.valueOf(sam2))
                     .build();
-            Request request = new Request.Builder().url("http://192.168.149.90:5000/outbug")
+            Request request = new Request.Builder().url("http://192.168.145.90:5000/outbug")
                     .post(formbody)
                     .build();
             okHttpClient.newCall(request).enqueue(new Callback() {

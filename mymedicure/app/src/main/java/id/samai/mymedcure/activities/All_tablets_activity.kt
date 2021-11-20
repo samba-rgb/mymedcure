@@ -18,7 +18,7 @@ class All_tablets_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
         val binding = DataBindingUtil.setContentView<ActivityAllTabletsActivityBinding>(this, R.layout.activity_all_tablets_activity)
-        supportActionBar?.title = getString(R.string.allsubjects)
+        supportActionBar?.title = "All Medicines"
 
         drawerLayout = binding.drawerLayout
         //ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);

@@ -79,7 +79,7 @@ class nightAdapter(val context: Context, private val schedules: ArrayList<medic>
 
  */
 
-                view.schedule_list_location.text = schedule.location
+                //view.schedule_list_location.text = schedule.location
                 view.setOnClickListener {
                     Intent(it.context, tab_details_2_java::class.java).apply {
                         val bundle = Bundle().apply {

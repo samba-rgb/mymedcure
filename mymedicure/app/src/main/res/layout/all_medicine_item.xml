@@ -30,7 +30,6 @@
             android:layout_alignParentTop="true"
 
             android:ellipsize="end"
-            android:fontFamily="@font/kgprimary"
             android:gravity="center"
             android:includeFontPadding="false"
             android:maxLines="1"

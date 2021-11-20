@@ -101,7 +101,7 @@ class NotificationReceiver : BroadcastReceiver() {
                 PendingIntent.getActivity(context, 0, intentMainActivity, PendingIntent.FLAG_UPDATE_CURRENT)
 
         val sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-        var bigContentText = "Reminder class $title at ${Formatter.getTimeFromMinute(timeStart!!)}. "
+        var bigContentText = "Reminder Medicine $title at ${Formatter.getTimeFromMinute(timeStart!!)}. "
         if (info != "")
             bigContentText += "$info. "
         if (location != "")
@@ -111,10 +111,10 @@ class NotificationReceiver : BroadcastReceiver() {
         // id channel 0
         val builder = NotificationCompat.Builder(context!!, "0")
                 .setContentTitle(title)
-                .setContentText("Reminder class $title at ${Formatter.getTimeFromMinute(timeStart)}")
+                .setContentText("Reminder Medicine $title at ${Formatter.getTimeFromMinute(timeStart)}")
                 .setStyle(NotificationCompat.BigTextStyle()
                         .bigText(bigContentText))
-                .setSmallIcon(R.drawable.icon2)
+                .setSmallIcon(R.drawable.medcure_icon)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_MAX)

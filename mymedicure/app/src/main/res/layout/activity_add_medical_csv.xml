@@ -79,7 +79,7 @@
             android:background="@drawable/bluerectangle"
             android:elevation="15dp"
             android:ellipsize="end"
-            android:text="Load Timetable"
+            android:text="Load Medicine"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"

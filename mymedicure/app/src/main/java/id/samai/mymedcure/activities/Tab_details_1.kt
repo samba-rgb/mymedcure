@@ -54,6 +54,7 @@ class Tab_details_1 : AppCompatActivity() {
         val link = bundle!!.getString("link")
         val week_count = bundle!!.getInt("week_count")
         val total = bundle!!.getInt("total")
+        val expriry = bundle!!.getString("expiry")
         val quo = total/week_count
         val rem = week_count%7
         val str = quo.toString() + "\n" + "weeks"
@@ -177,6 +178,8 @@ remdays.text = str
             Intent(it.context, single_hist_tab::class.java).apply {
                 val bundle = Bundle().apply {
                     putExtra("name", subname)
+                    putExtra("expiry",expriry)
+
                 }
                 putExtras(bundle)
                 it.context.startActivity(this)
@@ -187,6 +190,7 @@ remdays.text = str
             Intent(it.context, single_hist_tab::class.java).apply {
                 val bundle = Bundle().apply {
                     putExtra("name", subname)
+                    putExtra("expiry",expriry)
                 }
                 putExtras(bundle)
                 it.context.startActivity(this)

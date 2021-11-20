@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import id.samai.mymedcure.R
 import id.samai.mymedcure.helpers.DBHelper
@@ -13,15 +14,15 @@ import id.samai.mymedcure.models.medic
 import kotlinx.android.synthetic.main.itemholder.view.*
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
-class total_day_Adapter (val context: Context, private val schedules: ArrayList<medic>) : RecyclerView.Adapter<total_day_Adapter.ViewHolder>() {
+
+class total_day_Adapter(val context: Context, private val schedules: ArrayList<medic>) : RecyclerView.Adapter<total_day_Adapter.ViewHolder>() {
     var db = DataBase2(context)
     private var id: Int? = null
     val dbHelper: DBHelper get() = DBHelper.newInstance(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder(
-        LayoutInflater.from(parent.context).inflate(R.layout.itemholder, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.itemholder, parent, false)
     )
 
     override fun getItemCount(): Int = schedules.size
@@ -35,7 +36,7 @@ class total_day_Adapter (val context: Context, private val schedules: ArrayList<
         fun bind(schedule: medic) {
             var ink = "s"
             val c = Calendar.getInstance()
-            val timeOfDay = c[Calendar.HOUR_OF_DAY]
+            val timeOfDay = schedule.timeStart/60
 
             if (timeOfDay >= 0 && timeOfDay < 11) {
                 ink = "morning"
@@ -60,7 +61,7 @@ class total_day_Adapter (val context: Context, private val schedules: ArrayList<
             val todaystat = dbHelper.getTabletdatebool(schedule.title, dateTime)
             view.percent.setImageResource(R.drawable.wrong)
             if(!todaystat.isEmpty()) {
-                if (todaystat.get(0)[ink]== 1) {
+                if (todaystat.get(0).get(ink)== 1) {
                     view.percent.setImageResource(R.drawable.ok)
 
                 }
@@ -68,9 +69,10 @@ class total_day_Adapter (val context: Context, private val schedules: ArrayList<
             }
             val scheduleTime = "${Formatter.getTimeFromMinute(schedule.timeStart)} - ${
                 Formatter.getTimeFromMinute(
-                    schedule.timeEnd
+                        schedule.timeEnd
                 )}"
             view.schedule_list_time.text = scheduleTime
+
             try {
                 val user = schedule.title
 
@@ -86,12 +88,13 @@ class total_day_Adapter (val context: Context, private val schedules: ArrayList<
 
                 }
 
+
  */
 
-                view.schedule_list_location.text = schedule.location
+               // view.schedule_list_location.text = schedule.location
 
             }
-            catch (e:Exception){
+            catch (e: Exception){
 
             }
 

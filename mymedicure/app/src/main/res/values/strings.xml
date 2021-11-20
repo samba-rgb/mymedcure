@@ -6,7 +6,7 @@
     <string name="no">No</string>
 
     <!-- Schedule -->
-    <string name="schedule_new">New Subject</string>
+    <string name="schedule_new">Add Doctor Observation</string>
     <string name="schedule_update">Update Subject Timings</string>
     <string name="schedule_title">Title</string>
     <string name="schedule_location">Location</string>
@@ -116,7 +116,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="importinfo">To import timetable you need to have an csv file which is sent by your friend or anyone.This is an new feature.to send your timetable to any of your friend you need to go to share time table option in menu .</string>
+    <string name="importinfo">To import medicine you need to have an csv file which is sent by your doctoe or anyone.This is an new feature.to send your medicine data to any of your friend you need to go to share data option in menu .</string>
     <string name="allsubjects">All Subjects</string>
     <string name="sharetimetable">Share Time Table</string>
 </resources>

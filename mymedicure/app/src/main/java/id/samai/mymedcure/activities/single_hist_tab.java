@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.applandeo.materialcalendarview.CalendarView;
@@ -37,6 +38,7 @@ public class single_hist_tab extends AppCompatActivity {
         Bundle b = new Bundle();
         b = getIntent().getExtras();
         String name = b.getString("name");
+        String expiry = b.getString("expiry");
         mCalendarView = (CalendarView) findViewById(R.id.calendarView_1);
         RelativeLayout morning = findViewById(R.id.morning_view);
         RelativeLayout afternoon = findViewById(R.id.afternoon_view);
@@ -46,7 +48,22 @@ public class single_hist_tab extends AppCompatActivity {
         ImageView afternoon_image = findViewById(R.id.image_afternoon);
         ImageView evening_image = findViewById(R.id.image_evening);
         ImageView night_image = findViewById(R.id.image_night);
+        TextView date = findViewById(R.id.date_now);
+        TextView expiry_date  = findViewById(R.id.date_expiry);
+        String k  = "Expiry :" + expiry;
+        expiry_date.setText(k);
+        Calendar c = Calendar.getInstance();
+        Date date3 =  new Date();
+        c.setTime(date3);
+        //c.add(Calendar.YEAR, Calendar.YEAR);
+        SimpleDateFormat df = new SimpleDateFormat("MMMM dd yyyy (EEE)", Locale.US);
+        String  dateTime = df.format(c.getTime()).toString();
+        String today  = "Today :" + dateTime;
+        date.setText(today);
 
+
+        TextView name2 = findViewById(R.id.medicine_name2);
+        name2.setText(name);
 
 
         mCalendarView.setOnDayClickListener(new OnDayClickListener() {
@@ -70,7 +87,11 @@ public class single_hist_tab extends AppCompatActivity {
         ImageView afternoon_image = findViewById(R.id.image_afternoon);
         ImageView evening_image = findViewById(R.id.image_evening);
         ImageView night_image = findViewById(R.id.image_night);
-
+        TextView date = findViewById(R.id.date_now);
+        String today  = "Today :" + eventDay;
+        date.setText(today);
+        TextView name2 = findViewById(R.id.medicine_name2);
+        name2.setText(name.toString());
         DBHelper dbHelper;
         dbHelper = new DBHelper(getApplicationContext());
         ArrayList<TABLET> schedules = dbHelper.getTabletdatebool(name.toString(), eventDay);
@@ -80,6 +101,7 @@ public class single_hist_tab extends AppCompatActivity {
             if(first.getMonday()==1){
                 if(first.getMonday_morning()==0){
                     morning.setVisibility(View.INVISIBLE);
+
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
@@ -368,7 +390,7 @@ public class single_hist_tab extends AppCompatActivity {
 
         }
 
-        Toast.makeText(getApplicationContext(), eventDay.toString(), Toast.LENGTH_SHORT).show();
+       // Toast.makeText(getApplicationContext(), eventDay.toString(), Toast.LENGTH_SHORT).show();
 
     }
 }

@@ -21,7 +21,7 @@ class medical_health : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
         val binding = DataBindingUtil.setContentView<ActivityMedicalHealthBinding>(this, R.layout.activity_medical_health)
-        supportActionBar?.title = getString(R.string.allsubjects)
+        supportActionBar?.title = "medical observations"
 
         drawerLayout = binding.drawerLayout2
         //ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);

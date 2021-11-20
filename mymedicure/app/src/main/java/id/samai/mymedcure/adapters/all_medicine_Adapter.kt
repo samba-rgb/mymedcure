@@ -50,6 +50,7 @@ class all_medicine_Adapter (val context: Context, private val schedules: ArrayLi
                         putExtra("link",schedule.link)
                         putExtra("week_count",schedule.week_count)
                         putExtra("total",schedule.count)
+                        putExtra("expiry",schedule.expiry)
                     }
                     putExtras(bundle)
                     it.context.startActivity(this)

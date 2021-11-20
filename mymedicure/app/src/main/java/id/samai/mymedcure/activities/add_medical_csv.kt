@@ -475,7 +475,7 @@ class add_medical_csv : AppCompatActivity() {
 
                     }
                     catch (e: Exception){
-                        Toast.makeText(applicationContext, "COMPLETED", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext, e.toString(), Toast.LENGTH_SHORT).show()
 
                         break;
                     }
