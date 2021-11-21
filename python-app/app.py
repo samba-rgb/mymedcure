@@ -7,6 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from flask import Flask, send_from_directory
+from sklearn.metrics import mean_squared_error
 
 import urllib
 import pyrebase
@@ -196,16 +197,15 @@ def outbug():
     df["night_actual"] = df["night_actual"].astype(str).astype(int)
     
     cor = df.corr(method ='kendall')
-    day = ['morning','afternoon','evening','night']
-    a= 0
-    for i in day:
-        a  += cor[i][i + '_actual']*100
+    day_time = ['morning','afternoon','evening','night']
+    l = []
+    for i in day_time:
+        test = df[[i]]
+        pred = df[[i+'_actual']]
+        p = mean_squared_error(test,pred)
+        l.append(1-p)
     
-    try:
-        ting = str(int(a//4))
-    except:
-        ting = "0"
-    return ting
+    return str(int(sum(l)*100/4))
 
 @app.route("/debug", methods=["POST"])
 def debug():
@@ -360,4 +360,4 @@ def uploadfirebase():
     return path
 
 if __name__ == "__main__":
-  app.run(host="192.168.149.90")
+  app.run(debug = True)

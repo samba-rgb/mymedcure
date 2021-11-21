@@ -25,14 +25,14 @@
         android:title="health records" />
     <item
         android:id="@+id/importdatabase"
-        android:icon="@drawable/downl"
+        android:icon="@drawable/doc2"
         android:title="Import Doctor observation" />
 
 
 
     <item
         android:id="@+id/import_medicine"
-        android:icon="@drawable/infoshare"
+        android:icon="@drawable/imp2"
         android:title="Import medicine " />
 
 
@@ -42,7 +42,7 @@
         android:title="Tracker" />
     <item
         android:id="@+id/exportdatabase"
-        android:icon="@drawable/export"
+        android:icon="@drawable/datashare"
         android:title="Share Data" />
 
 

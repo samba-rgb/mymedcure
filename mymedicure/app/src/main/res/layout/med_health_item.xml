@@ -30,7 +30,7 @@
             android:layout_alignParentTop="true"
 
             android:ellipsize="end"
-            android:fontFamily="@font/kgprimary"
+            android:fontFamily="sans-serif-thin"
             android:gravity="center"
             android:includeFontPadding="false"
             android:maxLines="1"
@@ -39,8 +39,8 @@
             android:textColor="#EF5350"
             android:textCursorDrawable="@null"
             android:textSize="25sp"
-            tools:text="Calculus"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            tools:text="Calculus" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/doctor_name_1"
@@ -65,41 +65,44 @@
             android:layout_below="@id/doctor_name_1"
             android:background="@drawable/gold_rectangle"
             android:padding="10dp">
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/visited_date_text"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_toStartOf="@+id/schedule_list_time"
                 android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
                 android:includeFontPadding="false"
                 android:maxLines="1"
-                android:gravity="center"
                 android:padding="5dp"
                 android:paddingStart="@dimen/tiny_margin"
                 android:paddingEnd="@dimen/tiny_margin"
-                android:textCursorDrawable="@null"
-                android:fontFamily="@font/kgprimary"
-                android:textSize="20sp"
                 android:textColor="@android:color/black"
-                tools:text="Visited Date"/>
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                tools:text="Visited Date" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/visited_date_1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/visited_date_text"
+                android:autoSizeTextType="uniform"
                 android:ellipsize="end"
-                android:fontFamily="@font/kgprimary"
+                android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:includeFontPadding="false"
-                android:padding="5dp"
-                android:layout_toRightOf="@id/visited_date_text"
                 android:maxLines="1"
+                android:padding="5dp"
                 android:paddingStart="@dimen/tiny_margin"
                 android:paddingEnd="@dimen/tiny_margin"
                 android:textColor="@android:color/black"
                 android:textCursorDrawable="@null"
-                android:autoSizeTextType="uniform"
                 android:textStyle="bold"
+                android:layout_centerVertical="true"
                 tools:text="@string/task_date_default" />
 
         </RelativeLayout>

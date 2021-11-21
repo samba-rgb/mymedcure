@@ -105,6 +105,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
+                    morning_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getMonday_afternoon()==0){
@@ -112,6 +113,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                   afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getMonday_evening()==0){
@@ -119,12 +121,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getMonday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -144,6 +148,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
+                    morning_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getTuesday_afternoon()==0){
@@ -151,6 +156,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                    afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getTuesday_evening()==0){
@@ -158,12 +164,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getTuesday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -183,6 +191,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
+                    morning_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getWednessday_afternoon()==0){
@@ -190,6 +199,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                    afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getWednessday_evening()==0){
@@ -197,12 +207,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getWednessday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -222,6 +234,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
+                    morning_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getThursday_afternoon()==0){
@@ -229,6 +242,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                    afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getThursday_evening()==0){
@@ -236,12 +250,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getThursday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -261,6 +277,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
+                    morning_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getFriday_afternoon()==0){
@@ -268,6 +285,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                    afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getFriday_evening()==0){
@@ -275,12 +293,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getFriday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -300,6 +320,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
+                    morning_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getSaturday_afternoon()==0){
@@ -307,6 +328,7 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                    afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getSaturday_evening()==0){
@@ -314,12 +336,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getSaturday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -339,13 +363,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     morning.setVisibility(View.VISIBLE);
-
+                    morning_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getSunday_afternoon()==0){
                     afternoon.setVisibility(View.INVISIBLE);
                 }
                 else {
                     afternoon.setVisibility(View.VISIBLE);
+                    afternoon_image.setImageResource(R.drawable.wrong);
 
                 }
                 if(first.getSunday_evening()==0){
@@ -353,12 +378,14 @@ public class single_hist_tab extends AppCompatActivity {
                 }
                 else{
                     evening.setVisibility(View.VISIBLE);
+                    evening_image.setImageResource(R.drawable.wrong);
                 }
                 if(first.getSunday_night()==0){
                     night.setVisibility(View.INVISIBLE);
                 }
                 else {
                     night.setVisibility(View.VISIBLE);
+                    night_image.setImageResource(R.drawable.wrong);
                 }
 
             }
@@ -377,18 +404,32 @@ public class single_hist_tab extends AppCompatActivity {
             if(schedule.getMorning()==1){
                 morning_image.setImageResource(R.drawable.ok);
             }
+            else{
+                morning_image.setImageResource(R.drawable.wrong);
+
+            }
             if(schedule.getAfternoon()==1){
                 afternoon_image.setImageResource(R.drawable.ok);
+            }
+            else{
+                afternoon_image.setImageResource(R.drawable.wrong);
             }
             if(schedule.getEvening()==1){
                 evening_image.setImageResource(R.drawable.ok);
             }
+            else{
+                evening_image.setImageResource(R.drawable.wrong);
+            }
             if(schedule.getNight()==1){
                 night_image.setImageResource(R.drawable.ok);
+            }
+            else {
+                night_image.setImageResource(R.drawable.wrong);
             }
 
 
         }
+
 
        // Toast.makeText(getApplicationContext(), eventDay.toString(), Toast.LENGTH_SHORT).show();
 

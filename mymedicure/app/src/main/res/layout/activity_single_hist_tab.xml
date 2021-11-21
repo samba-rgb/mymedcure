@@ -6,7 +6,8 @@
 
 android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.single_hist_tab">
+    tools:context=".activities.single_hist_tab"
+    android:background="#E1F5FE">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent">

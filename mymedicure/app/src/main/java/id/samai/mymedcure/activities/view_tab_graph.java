@@ -45,6 +45,7 @@ public class view_tab_graph extends AppCompatActivity {
 
         buttonIncrement = (Button) findViewById(R.id.button_incr);
         CircularProgressBar circularProgressBar = findViewById(R.id.progress_bar);
+        circularProgressBar.setIndeterminateMode(true);
 // Set Progress
         textView = (TextView) findViewById(R.id.text_view_progress);
         textView2 = (TextView) findViewById(R.id.textView);
@@ -79,7 +80,7 @@ public class view_tab_graph extends AppCompatActivity {
                             .add("tablet", String.valueOf(sam))
                             .add("pattern",String.valueOf(sam2))
                             .build();
-                    Request request = new Request.Builder().url("http://192.168.145.90:5000/debug")
+                    Request request = new Request.Builder().url("https://my-medicure-python-mock1.herokuapp.com/debug")
                             .post(formbody)
                             .build();
                     okHttpClient.newCall(request).enqueue(new Callback() {
@@ -137,24 +138,25 @@ public class view_tab_graph extends AppCompatActivity {
     // the progress of ProgressBar in text
     private void updateProgressBar() {
         CircularProgressBar circularProgressBar = findViewById(R.id.progress_bar);
+        circularProgressBar.setIndeterminateMode(false);
 
         circularProgressBar.setProgress(progress);
 
         textView.setText(String.valueOf(progress));
 
-        if( (progress <100 )&&(75<progress)){
+        if( (progress <100 )&&(75<=progress)){
 
             String text = "Your percentage was " + progress + " please take medicines at correct time";
             textView2.setText(text);
 
         }
-        if( (progress <75 )&&(50<progress)){
+        if( (progress <75 )&&(50<=progress)){
 
             String text = "Your percentage was " + progress + " please take medicines at correct time";
             textView2.setText(text);
 
         }
-        if( (progress <50 )&&(25<progress)){
+        if( (progress <50 )&&(25<=progress)){
 
             String text = "Your percentage was " + progress + " please take medicines at correct time" + " your score was very low which leads to damage in your health";
             textView2.setText(text);
@@ -184,7 +186,7 @@ public class view_tab_graph extends AppCompatActivity {
                     .add("tablet", String.valueOf(sam))
                     .add("pattern",String.valueOf(sam2))
                     .build();
-            Request request = new Request.Builder().url("http://192.168.145.90:5000/debug")
+            Request request = new Request.Builder().url("http://192.168.1.100:5000/debug")
                     .post(formbody)
                     .build();
             okHttpClient.newCall(request).enqueue(new Callback() {
@@ -245,7 +247,7 @@ public class view_tab_graph extends AppCompatActivity {
                     .add("tablet", String.valueOf(sam))
                     .add("pattern",String.valueOf(sam2))
                     .build();
-            Request request = new Request.Builder().url("http://192.168.145.90:5000/outbug")
+            Request request = new Request.Builder().url("https://my-medicure-python-mock1.herokuapp.com/outbug")
                     .post(formbody)
                     .build();
             okHttpClient.newCall(request).enqueue(new Callback() {
